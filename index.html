@@ -562,7 +562,7 @@ async function doLogin() {
   btn.disabled = true;
 
   // Offline mode ถ้ายังไม่ได้ตั้ง URL
-  if (SHEET_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+  if (SHEET_URL === "https://script.google.com/macros/s/AKfycbyY_qMgr69CQo9zLwCkBdwuQvgNZ91AjJ6gguyeDJfD1bxQQPqTPyyYdpFkeuJTlp-V5g/exec") {
     // Demo mode: accept any login
     currentUser = { username: u, role: u === 'admin' ? 'admin' : 'user', password: p };
     trades = JSON.parse(localStorage.getItem('trades_' + u) || '[]');
